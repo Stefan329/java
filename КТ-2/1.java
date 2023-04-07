@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class Pandora {
     public static void main(String []args) {
         Scanner sc=new Scanner(System.in);
         int m,n;
@@ -17,7 +17,17 @@ public class Main {
                 cat[i][j]=sc.nextInt();
             }
         }
-        
+
+        System.out.println("Элементы матрицы до транспонирования: ");
+        for(int i=0;i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                System.out.print(cat[i][j]+" ");
+            }
+            System.out.println("");
+        }
+
         int dog[][]=new int[10][10];
         for(int i=0;i<m;i++)
         {
